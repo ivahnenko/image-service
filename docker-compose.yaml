@@ -1,0 +1,20 @@
+version: '3'
+services:
+  redis:
+    image: redis
+    container_name: redis
+    ports:
+      - "6379:6379"
+    networks:
+      - local-network
+  image-service:
+    container_name: image-service
+    build: .
+    ports:
+      - "8080:8080"
+    networks:
+      - local-network
+
+networks:
+  local-network:
+    driver: bridge

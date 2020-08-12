@@ -1,0 +1,10 @@
+client:
+  authUrl: "http://interview.agileengine.com/auth"
+  imagesUrl: "http://interview.agileengine.com/images"
+  apikey: "23567b218376f79d9415"
+
+cache:
+  name: "images"
+  host: "redis"
+  port: 6379
+  ttl: 86400
